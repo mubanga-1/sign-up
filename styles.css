@@ -1,19 +1,19 @@
 @font-face {
     font-family: "Poppins";
-    src: url("Poppins/Poppins-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Poppins";
-    src: url("Poppins/Poppins-Bold.ttf") format("truetype");
+    src: url("Poppins/Poppins-SemiBold.ttf") format("truetype");
     font-weight: bold;
     font-size: normal;
     font-display: swap;
 }
 
+
+@font-face {
+    font-family: "Poppins";
+    src: url("Poppins/Poppins-Medium.ttf") format("truetype");
+    font-weight: normal;
+    font-size: normal;
+    font-display: swap;
+}
 
 * {
     box-sizing: border-box;
@@ -68,8 +68,46 @@ form {
 
 form input {
     display: block;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: .1rem .6rem;
+    
 }
 
 .form-info {
     gap: 100px;
+}
+
+.italic {
+    display: inline-block;
+    font-style: italic;
+    padding-right: 2.7px;
+}
+
+.form-info label {
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+
+.input-wrapper input:invalid {
+    border-color: #ff0000;
+}
+
+.submit {
+    box-shadow: inset black 0rem .2rem .4rem;
+}
+
+.submit button {
+    text-transform: capitalize;
+    width: 11rem;
+    padding: .2rem;
+    color: #fff;
+    background-color: #005100;
+    border: 1px solid;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+}
+
+.login-text {
+    color: #005100;
 }
