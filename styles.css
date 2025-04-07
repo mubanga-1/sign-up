@@ -68,9 +68,10 @@ form {
 
 form input {
     display: block;
-    border: 1px solid black;
+    border: 1px solid #7d7d7d;
     border-radius: 5px;
     padding: .1rem .6rem;
+    width: 14rem;
     
 }
 
@@ -98,14 +99,16 @@ form input {
 }
 
 .submit button {
+    font-size: 1.1rem;
     text-transform: capitalize;
-    width: 11rem;
-    padding: .2rem;
+    width: 14rem;
+    padding: .5rem;
     color: #fff;
     background-color: #005100;
-    border: 1px solid;
+    border: 1px solid #005100;
     border-radius: .4rem;
     margin-bottom: 1rem;
+    box-shadow: black .2rem .3rem .5rem;
 }
 
 .login-text {
